@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.525) !important;
+}
+.navbar-brand {
+  color: white;
+}
+.navbar-brand:hover {
+  color: #8b2734;
+}
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: #8b2734;
+}
+.navbar-toggler {
+  filter: brightness(0) invert(1);
+}
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+.rst {
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: #8b2734;
+  font-weight: bold;
+}
+span {
+  color: #8b2734;
+  font-size: 16px;
+  line-height: 18px;
+}
+a {
+  text-decoration: none;
+  color: #8b2734;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+.rst li::before {
+  content: "•";
+  color: #8b2734;
+  /* margin-right: 10px; */
+}
+
+.product {
+  margin: 100px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.product-image {
+  width: 50%;
+  height: 100%;
+}
+.product-image-prince {
+  width: 30%;
+}
+
+.certificates {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.certificate {
+  height: 270px;
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.certificate-image {
+  width: 250px;
+  height: 100%;
+}
+
+.prince {
+  margin: 20px auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.prince-certificate-image {
+  height: 500px;
+}
+footer {
+  position: relative;
+  bottom: -16px;
+  width: 100%;
+  height: 250px;
+  background-color: #8b2734;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+footer a {
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  .prince {
+    flex-direction: column;
+  }
+  .prince-certificate-image {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product {
+    flex-direction: column;
+    gap: 80px;
+    text-align: center;
+  }
+  .product-image {
+    width: 70%;
+  }
+  .product-image-prince {
+    height: 400px;
+  }
+
+  .certificate {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
